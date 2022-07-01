@@ -1,0 +1,62 @@
+.restaurants {
+    display: grid;
+    gap: 16px;
+}
+@media screen and (min-width: 700px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .restaurantInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+@media screen and (min-width: 950px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .content {
+        max-width: 1200px;
+    }
+}
+@media screen and (min-width: 650px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    #menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 650px) {
+    .nav_item {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 650px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+    }
+    .nav_list {
+        max-width: 160px;
+        background-color: #125b50;
+        position: absolute;
+        transform: translate(-700px, 62px);
+        transition: transform 0.4s ease-in-out;
+    }
+    .open {
+        transform: translate( 0, 62px);
+    }
+    header > .nav > .nav_list > .nav_item > a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+}
